@@ -1,0 +1,201 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --primary: #262626;
+    --secondary: #595959;
+    --tertiary: #d9d9d9;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#heroDiv {
+    background-image: url(./images/space.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20%; 
+}
+
+#mainDiv {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20%; 
+}
+
+#introDiv {
+    background-color: transparent;
+}
+
+header, footer {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    flex: 1;
+}
+
+.profile {
+    border-radius: 10%;
+    border: solid var(--tertiary);
+    padding: 1px;
+    margin: 1vh;
+}
+
+menu {
+    list-style-type: none;
+    display: flex;    
+    justify-content: space-between;
+    margin: 0;
+    padding: 1.5vh 3vh;
+}
+
+#proSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: var(--tertiary);
+    padding: 2vh;
+}
+
+section {
+    display: flex;
+    padding: 3vh;
+    border-radius: 3vh;
+    background-color: var(--primary);
+    gap: 5vh; 
+}
+
+@media screen and (max-width: 800px){
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    border-radius: 3vh;
+    background-color: var(--primary);
+    gap: 5vh; 
+}
+}
+
+section a {
+    color: white;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#searchForm {
+    background-color: var(--primary);
+    padding: 3vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+label {
+    font-size: larger;
+}
+
+[type="text"], [type="submit"] {
+    background-color: var(--tertiary);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--tertiary);
+}
+
+section [target]:hover {
+    color: #ff8800;
+}
+
+menu li {
+    align-self: center;
+}
+
+span {
+    display: inline-flex;
+    gap: 4vh;
+}
+
+#aboutGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 3%;
+    flex: 10;
+    gap: 2vh;
+    font-size: larger;
+}
+
+#bio {
+    text-align: center;
+    justify-self: center;
+    grid-column: 1 / span 3;
+    block-size: fit-content;
+}
+
+p + table {
+    grid-column: 1 / span 3;
+}
+
+#skills {
+    grid-column: 1 / span 3;
+    list-style-type: none;
+    display: flex;
+    gap: 1%;
+    margin-top: 10vh;
+
+}
+
+p::first-letter {
+    font-size: larger;
+}
+
+table ~ ul {
+    grid-column: 1 / span 2;
+}
+
+table, th, td {
+    border: solid 2px var(--tertiary);
+    border-collapse: collapse;
+}
+
+footer > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1vh;
+}
+
+div {
+    background-color: var(--primary);
+    color: var(--tertiary);
+}
+
+#discord:hover {
+    cursor: pointer;
+}

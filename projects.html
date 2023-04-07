@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Austin Putland</title>
+        <link rel="icon" href="./images/favicon/AP.png">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <menu>
+                    <li><a href="index.html"><img class="profile" src="./images/profile/profilePic.jpg" width="32" alt="Profile Picture"></a></li>
+                    <form id="color">
+                        <label for="dark">Dark</label>
+                        <input type="radio" id="dark" value="dark" name="color">
+                        <label for="light">Light</label>
+                        <input type="radio" id="light" value="light" name="color">
+                        <label for="light">Blue</label>
+                        <input type="radio" id="blue" value="blue" name="color">
+                    </form>
+                    <li><a href="about.html">About</a></li>
+                </menu>
+            </nav>            
+        </header>
+        <div id="proSection">
+            <section>
+                <!--Section for Calc Project-->
+                <div>
+                    <!--div for text-->
+                    <h2><strong>Calculator Project</strong></h2>
+                    <p><strong>Description:</strong> In this project I implemented a new engineering notation feature. This allows a user to make calculations that are less error prone by displaying them in their ideal format. Engineering notation means that a number will be formatted in scientific notation, however the power will always be divisible by 3. This can be more convenient for the user if SI prefixes (micro, milli, kilo, giga, etc.) are used very often in their calculations.</p>
+                    <ol>
+                        Future Plans:
+                        <li>Add an "OFF" option</li>
+                        <li>Create a pull request to the original Repo</li>
+                        <li>Fix other outstanding Github issues</li>
+                    </ol>
+                    <ul>
+                        Tech Stack/skills:
+                        <li>C#: Used in the view & view-model</li>
+                        <li>C++: Used in the calculator engine</li>
+                        <li>XAML: Used as the GUI layout/design</li>
+                    </ul>
+                    <a href="https://github.com/Goofyeet/calculator/tree/feature/Eng-Notation" target="_blank">Github calculator link</a>
+                </div>
+                <div class="video">
+                    <!--div for video-->
+                    <video controls height="300">
+                        <source src="./videos/calc.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <section>
+                <!--Section for IR Remote Project-->
+                <div>
+                    <!--div for text-->
+                    <h2><strong>IR Remote Project</strong></h2>
+                    <p><strong>Description:</strong> I wanted a second remote for my fan, so I decided to clone the original remote. With the help of an Arduino and an open source IR library I was able to figure out the encoding method used, pulse distance encoding. After that, I used an oscilloscope to figure out the codes being sent for each button. Once the codes were determined, I wrote AVR assembly code for an ATTiny 12V microcontroller. The assembly code and project files can be found on my Github repo using the link below.</p>
+                    <ol>
+                        Future Plans:
+                        <li>3D print an enclosure for the PCB</li>
+                        <li>Upgrade the size of the IR LED</li>
+                        <li>Program a tool to help flashing the mcu program</li>
+                    </ol>
+                    <ul>
+                        Tech Stack/skills:
+                        <li>AVR Assembly: Used to program the 8-bit microcontroller</li>
+                        <li>C++: Used to program the Arduino</li>
+                    </ul>
+                    <a href="https://github.com/Goofyeet/IR-Remote" target="_blank">Github IR Remote link</a>
+                </div>
+                <div class="video">
+                    <!--div for video-->
+                    <video controls height = "300">
+                        <source src="https://raw.githubusercontent.com/Goofyeet/IR-Remote/dev/Media/remote.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <section>
+                <!--Section for Snake Game Project-->
+                <div>
+                    <!--div for text-->
+                    <h2><strong>Snake Game</strong></h2>
+                    <p><strong>Description:</strong> I wanted to make a small game to learn C++ a bit more. I decided to make a snake game in the console, but after making it I wanted it to look better. So I thought the next best thing would be to learn how to create a GUI. I decided to create it with the SFML library and very simple textures I created in Gimp. Additionally, I wanted to learn unit testing so I used the open source Catch2 library. Also, I then wanted to understand build systems so I taught myself how to integrate CMake into my project. I then realized I was succumbing to feature creep...</p>
+                    <ol>
+                        Future Plans:
+                        <li>Add sounds to the game</li>
+                            <ul>
+                                <li>Gulp
+                                    <audio controls>
+                                        <source src="./audio/gulp.wav" type="audio/wav"/>
+                                        <source src="./audio/gulp.mp3" type="audio/mp3"/>
+                                        Can't play audio file
+                                    </audio>
+                                </li>
+                                <li>Movement Sound</li>
+                                <li>Gameover Sound</li>
+                            </ul>
+                        <li>Create more aesthetically pleasing textures</li>
+                        <li>Add a score display</li>
+                    </ol>
+                    <ul>
+                        Tech Stack/skills:
+                        <li>C++: All of the code was written in C++</li>
+                        <li>Catch 2: Library used for unit testing</li>
+                        <li>CMake: Used as the meta build system</li>
+                    </ul>
+                    <a href="https://github.com/Goofyeet/Snake" target="_blank">Github Snake game link</a>
+                </div>
+                <div class="video">
+                    <!--div for video-->
+                    <video controls height="300">
+                        <source src="./videos/snake.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <form action="https://github.com/search" method="GET" target="_blank" id="searchForm">
+                <label>Explore Github</label>
+                <div>
+                    <textarea name="q" placeholder="Explore Github" id="searchBox"></textarea>
+                    <input type="submit" value="Search" id="search">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://github.com/Goofyeet" target="_blank">
+                    <img src="./images/github/githubBlk.png" alt="black github logo" height="32" title="Github">
+                    </a>
+                </li>
+                <!--Copy discord tag to clipboard when clicked-->
+                <li><img src="./images/discord/discord-mark-black.png" alt="black Discord logo" height="32" title="Copy Discord Tag" id="discord"></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/austin-putland-0ab599168/" target="_blank">
+                        <img src="./images/linked-in/LI-In-Bug.png" alt="LinkedIn logo" height="32">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
