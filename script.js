@@ -48,21 +48,28 @@ function everythingLoaded() {
         let gallerySelect = 0;
 
         let heroDiv = document.getElementById("heroDiv");
-        let newImg = document.createElement("img");
-        newImg.id = "galleryPic";
-        newImg.style.height = "5vw";
-        newImg.alt = "James Webb Telescope Space Picture";
+        //let newImg = document.createElement("img");
+        let newSpan = document.createElement("span");
 
-        newImg.src = path + photoGallery[gallerySelect];
-        heroDiv.style.backgroundImage = `url(${path}` + photoGallery[gallerySelect];
-
-        heroDiv.appendChild(newImg);
+        for(i = 0; i < photoGallery.length; i++){
+            let newImg = document.createElement("img");
+            newImg.style.height = "5vw";
+            newImg.alt = "James Webb Telescope Space Picture";
+            newImg.src = path + photoGallery[i];
+            newSpan.appendChild(newImg);
+        }
+ 
+        heroDiv.appendChild(newSpan);
 
         let numChanges = 0;
 
         //event handler that changes the hero image
-        function changeHero() {
+        function changeHero(event) {
             numChanges++;
+
+            let img = event.target.src.split("/").pop();
+            console.log(img);
+
             if (gallerySelect < photoGallery.length - 1) {
                 gallerySelect++;
             }
@@ -70,8 +77,9 @@ function everythingLoaded() {
                 gallerySelect = 0;
             }
 
-            newImg.src = path + photoGallery[gallerySelect];
-            heroDiv.style.backgroundImage = `url(${path}` + photoGallery[gallerySelect];
+            if(img != undefined){
+                heroDiv.style.backgroundImage = `url(${path}` + img;
+            }
 
             if (numChanges == 10) {
                 alert("I'm glad you're having fun changing the hero, but please just pick one...");
@@ -79,7 +87,7 @@ function everythingLoaded() {
             }
         }
 
-        newImg.addEventListener("click", changeHero);
+        newSpan.addEventListener("click", changeHero);
     }
 
     else if (htmlDoc == "projects.html") {
