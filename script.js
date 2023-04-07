@@ -115,4 +115,4 @@ function everythingLoaded() {
 
 }
 
-document.addEventListener("DOMContentLoaded", everythingLoaded);
+document.addEventListener("load", everythingLoaded);
