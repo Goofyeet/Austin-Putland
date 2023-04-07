@@ -1,6 +1,6 @@
 README
 	
-Bonus Free Hosting Website: https://goofyeet.github.io
+Bonus Free Hosting Website: https://goofyeet.github.io/Austin-Putland/
 
 The "Code Review" and "Design" can be viewed from the resources/ directory. See the file structure below for details.
 
