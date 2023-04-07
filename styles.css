@@ -21,7 +21,7 @@ body {
 }
 
 #heroDiv {
-    background-image: url(./images/space.png);
+    background-image: url(./images/hero/space.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
