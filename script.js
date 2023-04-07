@@ -42,7 +42,7 @@ function everythingLoaded() {
     colorChanger.addEventListener("click", changeTheme);
 
     //if the current html page is index.html, create photo gallery
-    if (htmlDoc == "index.html") {
+    if (htmlDoc == "index.html" || htmlDoc == "") {
         let photoGallery = ["space.png", "space2.jpg", "space3.png", "space4.png", "space5.png"];
         let path = "./images/hero/";
         let gallerySelect = 0;
