@@ -115,4 +115,4 @@ function everythingLoaded() {
 
 }
 
-document.addEventListener("load", everythingLoaded);
+everythingLoaded();
