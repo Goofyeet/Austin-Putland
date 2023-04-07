@@ -1,5 +1,7 @@
 README
 	
+Bonus Free Hosting Website: https://goofyeet.github.io
+
 The "Code Review" and "Design" can be viewed from the resources/ directory. See the file structure below for details.
 
 I used a form at the bottom of the projects.html page to search the Explore section of Github for some other neat projects.
@@ -81,8 +83,6 @@ File structure:
     ├── README.txt
     ├── styles.css
     └── script.js
-
-Bonus Free Hosting Website: 
 
 References:
 	Audio: "Drinking and swallowing" by dersuperanton on freesound.org
